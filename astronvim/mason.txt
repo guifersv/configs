@@ -1,0 +1,9 @@
+mason-registry: rzls roslyn
+
+cssmodules
+css-variables
+css-lsp
+html-lsp
+json-lsp
+rust-analyzer
+typescript-lsp
