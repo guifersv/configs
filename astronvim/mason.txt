@@ -1,9 +1,10 @@
 mason-registry: rzls roslyn
-
 cssmodules
 css-variables
 css-lsp
 html-lsp
 json-lsp
+pyright (ruim)
 rust-analyzer
 typescript-lsp
+lua lsp
