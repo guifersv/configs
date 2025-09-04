@@ -1,10 +1,8 @@
-mason-registry: rzls roslyn
 cssmodules
 css-variables
 css-lsp
 html-lsp
 json-lsp
-pyright (ruim)
-rust-analyzer
+jedi python
 typescript-lsp
 lua lsp
