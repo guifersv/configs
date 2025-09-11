@@ -1,8 +1,8 @@
 {
   "extras": [
     "lazyvim.plugins.extras.coding.mini-surround",
+    "lazyvim.plugins.extras.coding.yanky",
     "lazyvim.plugins.extras.editor.neo-tree",
-    "lazyvim.plugins.extras.lang.omnisharp",
     "lazyvim.plugins.extras.util.mini-hipatterns"
   ],
   "install_version": 8,
