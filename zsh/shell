@@ -16,3 +16,5 @@ set +h
 autoload -Uz compinit && compinit
 zstyle ':completion:*' menu select
 bindkey -e
+
+export PATH="$PATH:/home/gfernandes/.dotnet/tools"
