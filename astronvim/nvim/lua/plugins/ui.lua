@@ -1,3 +1,4 @@
+vim.opt.termguicolors = true
 return {
   {
     "folke/snacks.nvim",
