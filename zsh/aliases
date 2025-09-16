@@ -1,8 +1,17 @@
-git config --global alias.a 'add'
-git config --global alias.ps 'push'
-git config --global alias.pl 'pull'
-git config --global alias.l 'log'
-git config --global alias.c 'commit -m'
-git config --global alias.s 'status'
-git config --global alias.co 'checkout'
-git config --global alias.b 'branch'
+alias g='git'
+alias gcm='git commit -m'
+alias cd="zd"
+zd() {
+  if [ $# -eq 0 ]; then
+    builtin cd ~ && return
+  elif [ -d "$1" ]; then
+    builtin cd "$1"
+  else
+    z "$@" && printf "\U000F17A9 " && pwd || echo "Error: Directory not found"
+  fi
+}
+alias ls='eza -lh --group-directories-first --icons=auto'
+alias lsa='ls -a'
+alias lt='eza --tree --level=2 --long --icons --git'
+alias lta='lt -a'
+alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
