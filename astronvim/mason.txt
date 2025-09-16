@@ -1,8 +1,0 @@
-cssmodules
-css-variables
-css-lsp
-html-lsp
-json-lsp
-jedi python
-typescript-lsp
-lua lsp
