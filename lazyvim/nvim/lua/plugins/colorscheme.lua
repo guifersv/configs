@@ -1,18 +1,9 @@
 return {
   {
-    "rebelot/kanagawa.nvim",
+    "rose-pine/neovim",
+    name = "rose-pine",
     lazy = true,
-    name = "kanagawa",
     opts = {
-      colors = {
-        theme = {
-          all = {
-            ui = {
-              bg_gutter = "none",
-            },
-          },
-        },
-      },
       integrations = {
         aerial = true,
         alpha = true,
@@ -57,7 +48,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "kanagawa-dragon",
+      colorscheme = "rose-pine",
     },
   },
 }
