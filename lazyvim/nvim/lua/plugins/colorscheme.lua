@@ -44,11 +44,10 @@ return {
       },
     },
   },
-
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "rose-pine",
+      colorscheme = "rose-pine-moon",
     },
   },
 }
