@@ -104,3 +104,5 @@ eval "$(~/.local/bin/mise activate zsh)"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias lzd="lazydocker"
+alias lzg="lazygit"
