@@ -1,0 +1,7 @@
+coding:
+  mini-surround
+dap:
+  core
+editor:
+  mini-move
+  neo-tree
