@@ -28,7 +28,7 @@ map("n", "<A-r>", function()
     pos = "vsp",
     cmd = "dotnet run --project src/",
     id = "ekk",
-    clear_cmd = false
+    clear_cmd = false,
   }
 end, { desc = "Dotnet code runner" })
 
@@ -37,7 +37,7 @@ map("n", "<A-t>", function()
     pos = "vsp",
     cmd = "dotnet test",
     id = "ekk",
-    clear_cmd = false
+    clear_cmd = false,
   }
 end, { desc = "Dotnet test runner" })
 

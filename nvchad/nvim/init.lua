@@ -36,14 +36,14 @@ vim.schedule(function()
   require "mappings"
 end)
 
-require('mini.move').setup()
-require('mini.surround').setup()
-require('mini.icons').setup()
-require('mini.icons').mock_nvim_web_devicons()
-require('nvim-ts-autotag').setup({
+require("mini.move").setup()
+require("mini.surround").setup()
+require("mini.icons").setup()
+require("mini.icons").mock_nvim_web_devicons()
+require("nvim-ts-autotag").setup {
   opts = {
     -- Defaults
     enable_close = true, -- Auto close tags
-    enable_close_on_slash = false -- Auto close on trailing </
+    enable_close_on_slash = false, -- Auto close on trailing </
   },
-})
+}
