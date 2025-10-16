@@ -23,6 +23,10 @@ map("n", "<S-l>", function()
   require("nvchad.tabufline").next()
 end, { desc = "Switch to next buffer" })
 
+map("n", "<leader><S-x>", function()
+  require("nvchad.tabufline").closeAllBufs(true)
+end, { desc = "Close all buffers" })
+
 map("n", "<A-r>", function()
   require("nvchad.term").runner {
     pos = "vsp",
