@@ -35,3 +35,8 @@ require "autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+require('mini.move').setup()
+require('mini.surround').setup()
+require('mini.icons').setup()
+require('mini.icons').mock_nvim_web_devicons()
