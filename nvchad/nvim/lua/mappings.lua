@@ -1,0 +1,44 @@
+require "nvchad.mappings"
+
+-- add yours here
+
+local map = vim.keymap.set
+
+map("n", ";", ":", { desc = "CMD enter command mode" })
+map("i", "jk", "<ESC>")
+
+map("n", "<C-left>", "<C-w><", { desc = "Decrease width" })
+map("n", "<C-right>", "<C-w>>", { desc = "Increase width" })
+map("n", "<C-up>", "<C-w>+", { desc = "Increase height" })
+map("n", "<C-down>", "<C-w>-", { desc = "Decrease height" })
+
+map("n", "<leader>q", "<cmd> qa <cr>", { desc = "Quit all" })
+map("n", "<leader><S-q>", "<cmd> qa! <cr>", { desc = "Force quit all" })
+
+map("n", "<S-h>", function()
+  require("nvchad.tabufline").prev()
+end, { desc = "Switch to prev buffer" })
+
+map("n", "<S-l>", function()
+  require("nvchad.tabufline").next()
+end, { desc = "Switch to next buffer" })
+
+map("n", "<A-r>", function()
+  require("nvchad.term").runner {
+    pos = "vsp",
+    cmd = "dotnet run --project src/",
+    id = "ekk",
+    clear_cmd = false
+  }
+end, { desc = "Dotnet code runner" })
+
+map("n", "<A-t>", function()
+  require("nvchad.term").runner {
+    pos = "vsp",
+    cmd = "dotnet test",
+    id = "ekk",
+    clear_cmd = false
+  }
+end, { desc = "Dotnet test runner" })
+
+-- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
