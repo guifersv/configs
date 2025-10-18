@@ -103,7 +103,8 @@ return {
         "css",
         "c_sharp",
         "razor",
-        "yaml"
+        "json",
+        "yaml",
       },
     },
   },
