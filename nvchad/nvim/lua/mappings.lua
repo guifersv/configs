@@ -45,4 +45,13 @@ map("n", "<A-t>", function()
   }
 end, { desc = "Dotnet test runner" })
 
+map("n", "<A-w>", function()
+  require("nvchad.term").runner {
+    pos = "vsp",
+    cmd = "dotnet watch --project src/",
+    id = "ekk",
+    clear_cmd = false,
+  }
+end, { desc = "Dotnet watch" })
+
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")

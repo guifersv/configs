@@ -1,29 +1,29 @@
 return {
-  { 'nvim-mini/mini.move', version = false },
-  { 'nvim-mini/mini.surround', version = false },
-  { 'nvim-mini/mini.icons', version = false },
+  { "nvim-mini/mini.move", version = false },
+  { "nvim-mini/mini.surround", version = false },
+  { "nvim-mini/mini.icons", version = false },
   { "windwp/nvim-ts-autotag" },
   {
     "kdheepak/lazygit.nvim",
     lazy = true,
     cmd = {
-        "LazyGit",
-        "LazyGitConfig",
-        "LazyGitCurrentFile",
-        "LazyGitFilter",
-        "LazyGitFilterCurrentFile",
+      "LazyGit",
+      "LazyGitConfig",
+      "LazyGitCurrentFile",
+      "LazyGitFilter",
+      "LazyGitFilterCurrentFile",
     },
     -- setting the keybinding for LazyGit with 'keys' is recommended in
     -- order to load the plugin when the command is run for the first time
     keys = {
-        { "<leader>gg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
+      { "<leader>gg", "<cmd>LazyGit<cr>", desc = "LazyGit" },
     },
     dependencies = { "nvim-lua/plenary.nvim" },
   },
 
   {
     "stevearc/conform.nvim",
-    event = 'BufWritePre', -- format on save
+    event = "BufWritePre", -- format on save
     opts = require "configs.conform",
   },
 
@@ -58,12 +58,12 @@ return {
     end,
     init = function()
       -- We add the Razor file types before the plugin loads.
-      vim.filetype.add({
+      vim.filetype.add {
         extension = {
           razor = "razor",
           cshtml = "razor",
         },
-      })
+      }
     end,
   },
 
@@ -103,8 +103,8 @@ return {
         "css",
         "c_sharp",
         "razor",
-        "json",
         "yaml",
+        "json",
       },
     },
   },
