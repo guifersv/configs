@@ -88,6 +88,7 @@ return {
         "yaml-language-server",
         "roslyn",
         "rzls",
+        "netcoredbg",
       },
     },
   },
@@ -106,6 +107,40 @@ return {
         "yaml",
         "json",
       },
+    },
+  },
+  {
+    -- Debug Framework
+    "mfussenegger/nvim-dap",
+    dependencies = {
+      "rcarriga/nvim-dap-ui",
+    },
+    -- config = function()
+    --   require "custom-config.nvim-dap"
+    -- end,
+    event = "VeryLazy",
+  },
+  { "nvim-neotest/nvim-nio" },
+  { "rcarriga/nvim-dap-ui", dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" } },
+  {
+    "nvim-neotest/neotest",
+    requires = {
+      {
+        "Issafalcon/neotest-dotnet",
+      },
+    },
+    dependencies = {
+      "nvim-neotest/nvim-nio",
+      "nvim-lua/plenary.nvim",
+      "antoinemadec/FixCursorHold.nvim",
+      "nvim-treesitter/nvim-treesitter",
+    },
+  },
+  {
+    "Issafalcon/neotest-dotnet",
+    lazy = false,
+    dependencies = {
+      "nvim-neotest/neotest",
     },
   },
 }

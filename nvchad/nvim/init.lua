@@ -47,3 +47,8 @@ require("nvim-ts-autotag").setup {
     enable_close_on_slash = false, -- Auto close on trailing </
   },
 }
+
+require "configs.neotest"
+require "configs.nvim-dap-ui"
+require "configs.nvim-dap"
+require("dapui").setup()
