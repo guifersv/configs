@@ -7,25 +7,28 @@ local map = vim.keymap.set
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 
-map("n", "<C-left>", "<C-w><", { desc = "Decrease width" })
-map("n", "<C-right>", "<C-w>>", { desc = "Increase width" })
-map("n", "<C-up>", "<C-w>+", { desc = "Increase height" })
-map("n", "<C-down>", "<C-w>-", { desc = "Decrease height" })
+map("n", "<C-left>", "<C-w><", { desc = "Window Decrease width" })
+map("n", "<C-right>", "<C-w>>", { desc = "Window Increase width" })
+map("n", "<C-up>", "<C-w>+", { desc = "Window Increase height" })
+map("n", "<C-down>", "<C-w>-", { desc = "Window Decrease height" })
 
-map("n", "<leader>q", "<cmd> qa <cr>", { desc = "Quit all" })
-map("n", "<leader><S-q>", "<cmd> qa! <cr>", { desc = "Force quit all" })
+map("n", "<leader>q", "<cmd> qa <cr>", { desc = "Window Quit all" })
+map("n", "<leader><S-q>", "<cmd> qa! <cr>", { desc = "Window Force quit all" })
+
+map("n", "<leader>cd", vim.diagnostic.open_float, { desc = "Lsp Line Diagnostics" })
+map("n", "<leader>ca", "<cmd> lua vim.lsp.buf.code_action() <cr>", { desc = "Lsp Code Action" })
 
 map("n", "<S-h>", function()
   require("nvchad.tabufline").prev()
-end, { desc = "Switch to prev buffer" })
+end, { desc = "Buffer Switch to prev" })
 
 map("n", "<S-l>", function()
   require("nvchad.tabufline").next()
-end, { desc = "Switch to next buffer" })
+end, { desc = "Buffer Switch to next" })
 
 map("n", "<leader><S-x>", function()
   require("nvchad.tabufline").closeAllBufs(true)
-end, { desc = "Close all buffers" })
+end, { desc = "Buffer Close All" })
 
 map("n", "<A-r>", function()
   require("nvchad.term").runner {
@@ -34,7 +37,7 @@ map("n", "<A-r>", function()
     id = "ekk",
     clear_cmd = false,
   }
-end, { desc = "Dotnet code runner" })
+end, { desc = "Dotnet Code Runner" })
 
 map("n", "<A-t>", function()
   require("nvchad.term").runner {
@@ -43,7 +46,7 @@ map("n", "<A-t>", function()
     id = "ekk",
     clear_cmd = false,
   }
-end, { desc = "Dotnet test runner" })
+end, { desc = "Dotnet Test Runner" })
 
 map("n", "<A-w>", function()
   require("nvchad.term").runner {
@@ -52,49 +55,45 @@ map("n", "<A-w>", function()
     id = "ekk",
     clear_cmd = false,
   }
-end, { desc = "Dotnet watch" })
+end, { desc = "Dotnet Watch" })
 
 -- Debugger
 
 map("n", "<leader>dt", function()
   require("dap").toggle_breakpoint()
-end, { desc = "Toggle Breakpoint" })
+end, { desc = "Dap Toggle Breakpoint" })
 
 map("n", "<leader>dc", function()
   require("dap").continue()
-end, { desc = "Continue" })
+end, { desc = "Dap Continue" })
 
 map("n", "<leader>di", function()
   require("dap").step_into()
-end, { desc = "Step Into" })
+end, { desc = "Dap Step Into" })
 
 map("n", "<leader>do", function()
   require("dap").step_over()
-end, { desc = "Step Over" })
+end, { desc = "Dap Step Over" })
 
-map("n", "<leader>du", function()
+map("n", "<leader>ds", function()
   require("dap").step_out()
-end, { desc = "Step Out" })
+end, { desc = "Dap Step Out" })
 
 map("n", "<leader>dd", function()
   require("dapui").toggle()
-end, { desc = "DAP UI Toggle" })
+end, { desc = "Dap UI Toggle" })
 
 map("n", "<leader>dl", function()
   require("dap").run_last()
-end, { desc = "Run Last" })
+end, { desc = "Dap Run Last" })
 
 map("n", "<leader>dr", function()
   require("dap").repl.open()
-end, { desc = "Open REPL" })
+end, { desc = "Dap Open REPL" })
 
 map("n", "<leader>dq", function()
   require("dap").terminate()
   require("dapui").close()
-end, { desc = "Terminate" })
-
-map("n", "<leader>db", function()
-  require("dap").list_breakpoints()
-end, { desc = "List Breakpoints" })
+end, { desc = "Dap Terminate" })
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
