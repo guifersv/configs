@@ -79,13 +79,13 @@ return {
         "stylua",
         "html-lsp",
         "css-lsp",
-
-        -- needs to be installed manually
         "typescript-language-server",
         "csharpier",
         "prettier",
         "json-lsp",
         "yaml-language-server",
+
+        -- needs to be installed manually
         "roslyn",
         "rzls",
         "netcoredbg",
