@@ -1,8 +1,6 @@
 return {
   { "nvim-mini/mini.move", version = false },
   { "nvim-mini/mini.surround", version = false },
-  { "nvim-mini/mini.icons", version = false },
-  { "windwp/nvim-ts-autotag" },
   {
     "kdheepak/lazygit.nvim",
     lazy = true,
