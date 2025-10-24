@@ -1,1 +1,0 @@
-/home/guilove/.config/omarchy/current/theme/neovim.lua
