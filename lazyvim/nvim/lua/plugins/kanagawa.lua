@@ -1,3 +1,12 @@
 return {
-  "rebelot/kanagawa.nvim",
+  -- add gruvbox
+  { "savq/melange-nvim" },
+
+  -- Configure LazyVim to load gruvbox
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "melange",
+    },
+  },
 }
