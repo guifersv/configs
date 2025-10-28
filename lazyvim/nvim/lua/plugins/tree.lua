@@ -3,13 +3,13 @@ return {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
-        "bash",
         "html",
         "javascript",
+        "css",
+        "c_sharp",
+        "razor",
         "json",
         "lua",
-        "markdown",
-        "markdown_inline",
         "vim",
         "yaml",
       },
