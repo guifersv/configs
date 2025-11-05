@@ -10,6 +10,7 @@ return {
         "roslyn",
         "json-lsp",
         "yaml-language-server",
+        "csharpier",
       },
     },
   },
