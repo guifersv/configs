@@ -8,9 +8,8 @@ return {
       },
       ensure_installed = {
         "roslyn",
-        "json-lsp",
-        "yaml-language-server",
         "csharpier",
+        "netcoredbg",
       },
     },
   },
