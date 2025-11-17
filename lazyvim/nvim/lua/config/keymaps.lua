@@ -3,5 +3,5 @@
 -- Add any additional keymaps here
 local map = vim.keymap.set
 
-vim.keymap.set("i", "<C-c>", "<Esc>", { noremap = true, silent = true })
-vim.keymap.set("v", "<C-c>", "<Esc>", { noremap = true, silent = true })
+map("i", "<C-c>", "<Esc>", { noremap = true, silent = true })
+map("v", "<C-c>", "<Esc>", { noremap = true, silent = true })
