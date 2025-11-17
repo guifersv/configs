@@ -1,9 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
-eval "$(~/.local/bin/mise activate zsh)"
-eval "$(zoxide init bash)"
-
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -125,3 +122,6 @@ alias lg='lazygit'
 alias dr='dotnet run --project src/'
 alias dt='dotnet test'
 alias dw='dotnet watch --project src/'
+
+eval "$(~/.local/bin/mise activate zsh)"
+eval "$(zoxide init zsh)"
