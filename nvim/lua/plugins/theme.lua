@@ -1,11 +1,11 @@
 return {
-  { "loctvl842/monokai-pro.nvim" },
+  { "bjarneo/ash.nvim" },
 
   -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "monokai-pro",
+      colorscheme = "ash",
     },
   },
 }

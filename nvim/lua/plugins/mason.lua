@@ -8,8 +8,10 @@ return {
       },
       ensure_installed = {
         "roslyn",
+        "jdtls",
         "csharpier",
         "netcoredbg",
+        "google-java-format",
       },
     },
   },

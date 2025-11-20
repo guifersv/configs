@@ -5,6 +5,9 @@ WINIT_X11_SCALE_FACTOR = "1"
 [window]
 opacity = 0.8
 decorations_theme_variant = "Dark"
+# decorations = "None"
+# padding = { x = 4, y = 4 }
+# dynamic_padding = true
 
 [window.dimensions]
 columns = 180

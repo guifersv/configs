@@ -6,6 +6,7 @@ return {
         "c_sharp",
         "razor",
         "json",
+        "java",
       },
     },
   },
