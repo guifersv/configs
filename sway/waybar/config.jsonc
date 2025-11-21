@@ -26,7 +26,6 @@
       "8": "VIII",
       "9": "IX",
       "10": "X",
-      "focused": "󱓻"
     },
     "persistent-workspaces": {
       "1": [],
@@ -44,7 +43,7 @@
   "cpu": {
     "format": " {usage}%",
     "tooltip": false,
-    "on-click": "alacritty -e btop"
+    "on-click": "alacritty --class float-alacritty -e btop"
   },
   "memory": {
     "interval": 1,
@@ -74,6 +73,7 @@
       "format-wifi": " ({signalStrength}%)",
       "format-ethernet": "모{ipaddr}/{cidr}",
       "format-disconnected": "⚠ Disconnected",
+      "on-click": "alacritty --class float-alacritty -e nmtui"
   },
   "pulseaudio": {
       // "scroll-step": 1, // %, can be a float
