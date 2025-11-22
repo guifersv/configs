@@ -12,6 +12,7 @@
       "clock",
       "network",
       "battery",
+      "bluetooth"
   ],
   "sway/workspaces": {
     "format": "{icon}",
@@ -81,5 +82,13 @@
     "format-muted": " M",
     "tooltip-format": "{desc}",
     "on-click": "pavucontrol"
+  },
+    "bluetooth": {
+    "format": "",
+    "format-disabled": "󰂲",
+    // "format-connected": " {device_alias}",
+    "format-connected": "",
+    "tooltip-format": "Device: {device_alias}",
+    "on-click": "alacritty --class float-alacritty -e bluetui"
   }
 }
