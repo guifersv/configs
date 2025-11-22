@@ -6,14 +6,6 @@ client.urgent           #eb6f92 #eb6f92 #191724 #f6c177 #f6c177
 client.placeholder      #403d52 #191724 #e0def4 #403d52 #403d52
 #
 
-# Cursor theme and size
-set $cursor_theme "macOS"
-set $cursor_size 24
-
-seat * {
-    xcursor_theme $cursor_theme $cursor_size
-}
-
 default_border pixel 3
 titlebar_border_thickness 0
 font pango:JetBrains Mono 9
