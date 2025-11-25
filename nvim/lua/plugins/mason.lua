@@ -1,3 +1,4 @@
+---@type LazySpec
 return {
   {
     "mason-org/mason.nvim",
@@ -6,12 +7,24 @@ return {
         "github:mason-org/mason-registry",
         "github:Crashdummyy/mason-registry",
       },
+    },
+  },
+  {
+    "WhoIsSethDaniel/mason-tool-installer.nvim",
+    opts = {
       ensure_installed = {
+        "lua-language-server",
         "roslyn",
-        "jdtls",
+
+        -- install formatters
+        "stylua",
         "csharpier",
+
+        -- install debuggers
         "netcoredbg",
-        "google-java-format",
+
+        -- install any other package
+        "tree-sitter-cli",
       },
     },
   },
