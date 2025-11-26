@@ -1,6 +1,14 @@
 ---@type LazySpec
 return {
-  -- use mason-tool-installer for automatically installing Mason packages
+  {
+    "mason-org/mason.nvim",
+    opts = {
+      registries = {
+        "github:mason-org/mason-registry",
+        "github:Crashdummyy/mason-registry",
+      },
+    },
+  },
   {
     "WhoIsSethDaniel/mason-tool-installer.nvim",
     -- overrides `require("mason-tool-installer").setup(...)`
@@ -12,6 +20,7 @@ return {
         -- install formatters
 
         -- install debuggers
+        "netcoredbg",
 
         -- install any other package
         "tree-sitter-cli",
