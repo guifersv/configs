@@ -9,3 +9,5 @@ map("n", "<leader>mw", "<cmd>Dotnet watch<cr>", { desc = "Dotnet watch" })
 map("n", "<leader>mt", "<cmd>Dotnet test<cr>", { desc = "Dotnet test" })
 map("n", "<leader>mb", "<cmd>Dotnet build<cr>", { desc = "Dotnet build" })
 map("n", "<leader>mv", "<cmd>Dotnet project view<cr>", { desc = "Dotnet project view" })
+
+map("i", "jk", "<Esc>")
