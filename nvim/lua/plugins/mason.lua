@@ -8,6 +8,7 @@ return {
         "java-test",
         "java-debug-adapter",
         "jdtls",
+        "google-java-format",
       },
     },
   },
