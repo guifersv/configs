@@ -5,6 +5,9 @@ return {
       ensure_installed = {
         "csharpier",
         "netcoredbg",
+        "java-test",
+        "java-debug-adapter",
+        "jdtls",
       },
     },
   },

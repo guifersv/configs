@@ -8,10 +8,6 @@ return {
     },
     signature = {
       enabled = true,
-      keymaps = {
-        next_signature = "<C-j>",
-        prev_signature = "<C-h>",
-      },
     },
   },
 }

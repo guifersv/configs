@@ -11,3 +11,11 @@ map("n", "<leader>mb", "<cmd>Dotnet build<cr>", { desc = "Dotnet build" })
 map("n", "<leader>mv", "<cmd>Dotnet project view<cr>", { desc = "Dotnet project view" })
 
 map("i", "jk", "<Esc>")
+
+map("n", "<leader>jn", function()
+  require("jdtls").test_nearest_method()
+end, { desc = "Java run nearest test" })
+
+map("n", "<leader>jc", function()
+  require("jdtls").test_class()
+end, { desc = "Java run test class" })

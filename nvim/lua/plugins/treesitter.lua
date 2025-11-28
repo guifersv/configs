@@ -14,6 +14,7 @@ return {
       "xml",
       "yaml",
       "c_sharp",
+      "java",
     },
   },
 }
