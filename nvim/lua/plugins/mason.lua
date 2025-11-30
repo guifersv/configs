@@ -8,6 +8,7 @@ return {
 
         "csharpier",
         "google-java-format",
+        "rustfmt",
 
         "netcoredbg",
         "java-debug-adapter",
