@@ -10,6 +10,9 @@ map("n", "<leader>mt", "<cmd>Dotnet test<cr>", { desc = "Dotnet test" })
 map("n", "<leader>mb", "<cmd>Dotnet build<cr>", { desc = "Dotnet build" })
 map("n", "<leader>mv", "<cmd>Dotnet project view<cr>", { desc = "Dotnet project view" })
 
+map("n", "<leader>rr", "<cmd>Cargo run<cr>", { desc = "Cargo run" })
+map("n", "<leader>rt", "<cmd>Cargo test<cr>", { desc = "Cargo test" })
+
 map("i", "jk", "<Esc>")
 
 map("n", "<leader>jn", function()

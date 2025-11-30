@@ -3,12 +3,17 @@ return {
     "mason-org/mason.nvim",
     opts = {
       ensure_installed = {
-        "csharpier",
-        "netcoredbg",
-        "java-test",
-        "java-debug-adapter",
         "jdtls",
+        "rust-analyzer",
+
+        "csharpier",
         "google-java-format",
+
+        "netcoredbg",
+        "java-debug-adapter",
+        "codelldb",
+
+        "java-test",
       },
     },
   },
