@@ -15,6 +15,7 @@ return {
       "yaml",
       "c_sharp",
       "java",
+      "rust",
     },
   },
 }
