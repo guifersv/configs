@@ -1,0 +1,25 @@
+max-history=0
+history=0
+font=JetBrains Mono 11
+background-color=#221B2F
+text-color=#E6E0F8
+border-size=2
+border-color=#c28eff
+border-radius=10
+progress-color=over #c28eff
+default-timeout=4000
+format=<b>%a ⏵</b> %s\n%b
+
+[app-name=wp-vol]
+layer=overlay
+outer-margin=0,0,20
+history=0
+anchor=bottom-center
+# Group all volume notifications together
+group-by=app-name
+# Hide the group-index
+format=<b>%s</b>\n%b
+
+[app-name=volume group-index=0]
+# Only show last notification
+invisible=0
