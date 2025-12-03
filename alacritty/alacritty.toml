@@ -1,21 +1,23 @@
+[general]
+import = ["~/.config/alacritty/themes/oasis_twilight.toml"]
+
 [env]
 TERM = "xterm-256color"
 WINIT_X11_SCALE_FACTOR = "1"
 
 [window]
 opacity = 0.8
-decorations_theme_variant = "Dark"
 # decorations = "None"
-# padding = { x = 4, y = 4 }
-# dynamic_padding = true
+padding = { x = 4, y = 4 }
+dynamic_padding = true
 
-[window.dimensions]
-columns = 180
-lines = 40
+# [window.dimensions]
+# columns = 180
+# lines = 40
 
-[window.class]
-instance = "Alacritty"
-general = "Alacritty"
+# [window.class]
+# instance = "Alacritty"
+# general = "Alacritty"
 
 [scrolling]
 history = 10000
@@ -35,14 +37,14 @@ italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
 semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
 save_to_clipboard = true
 
-[cursor]
-style = "Underline"
-vi_mode_style = "None"
-unfocused_hollow = true
-thickness = 0.15
+# [cursor]
+# style = "Underline"
+# vi_mode_style = "None"
+# unfocused_hollow = true
+# thickness = 0.15
 
-[mouse]
-hide_when_typing = true
+# [mouse]
+# hide_when_typing = true
 
 [[mouse.bindings]]
 mouse = "Middle"
@@ -122,10 +124,3 @@ action = "ClearSelection"
 key = "Key0"
 mods = "Control"
 action = "ResetFontSize"
-
-[general]
-live_config_reload = true
-working_directory = "None"
-import = [
-    "~/.config/alacritty/theme.toml"
-]
