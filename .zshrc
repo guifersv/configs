@@ -3,7 +3,7 @@
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-
+export PATH="$HOME/.local/bin:$PATH"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="bira"
 
@@ -62,6 +62,7 @@ ZSH_THEME="bira"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
  plugins=(
+  mise
   git
   zsh-autosuggestions
   zsh-syntax-highlighting
@@ -75,7 +76,6 @@ ZSH_THEME="bira"
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export PATH="$HOME/bin:$PATH"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
