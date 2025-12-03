@@ -1,0 +1,94 @@
+{
+  "height": 20,
+  "modules-left": [
+      "pulseaudio",
+      "memory",
+      "cpu",
+  ],
+  "modules-center": [
+      "sway/workspaces",
+  ],
+  "modules-right": [
+      "clock",
+      "network",
+      "battery",
+      "bluetooth"
+  ],
+  "sway/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "1": "I",
+      "2": "II",
+      "3": "III",
+      "4": "IV",
+      "5": "V",
+      "6": "VI",
+      "7": "VII",
+      "8": "VIII",
+      "9": "IX",
+      "10": "X",
+    },
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": []
+    }
+  },
+  "clock": {
+      // "timezone": "America/New_York",
+    "format": "󰥔 {:%I:%M %p}",
+    "format-alt": "󰸗 {:%a %b %d}",
+    "tooltip-format": "<tt>{calendar}</tt>"
+  },
+  "cpu": {
+    "format": " {usage}%",
+    "tooltip": false,
+    "on-click": "alacritty --class float-alacritty -e btop"
+  },
+  "memory": {
+    "interval": 1,
+    "format": " {}%",
+    "tooltip-format": "{used}/{total} GiB",
+  },
+  "battery": {
+    "interval": 1,
+    "states": {
+      "good": 80,
+      "warning": 30,
+      "critical": 20
+    },
+    "format": " {capacity}%",
+    "format-charging": "{capacity}%",
+    "format-discharging": " {capacity}%",
+    "format-critical": " {capacity}% (Critical!!)",
+    "format-charging-warning": "{capacity}%",
+    "format-charging-critical": "{capacity}%",
+    "format-discharging-critical": " {capacity}% (critical!!)",
+    "tooltip-format": "{time} remaining",
+    "tooltip-format-charging": "{time} until full",
+    "tooltip-format-discharging": "{time} remaining",
+  },
+  "network": {
+      // "interface": "wlp2*", // (Optional) To force the use of this interface
+      "format-wifi": " ({signalStrength}%)",
+      "format-ethernet": "모{ipaddr}/{cidr}",
+      "format-disconnected": "⚠ Disconnected",
+      "on-click": "alacritty --class float-alacritty -e nmtui"
+  },
+  "pulseaudio": {
+      // "scroll-step": 1, // %, can be a float
+    "format": "  {volume}%",
+    "format-muted": " M",
+    "tooltip-format": "{desc}",
+    "on-click": "pavucontrol"
+  },
+    "bluetooth": {
+    "format": "",
+    "format-disabled": "󰂲",
+    // "format-connected": " {device_alias}",
+    "format-connected": "",
+    "tooltip-format": "Device: {device_alias}",
+    "on-click": "alacritty --class float-alacritty -e bluetui"
+  }
+}
