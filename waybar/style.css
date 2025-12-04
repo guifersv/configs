@@ -47,9 +47,9 @@
 
 #cpu,
 #memory,
-#battery,
 #clock,
 #pulseaudio,
+#custom-wlogout
 
 tooltip {
   padding: 2px;

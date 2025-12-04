@@ -10,8 +10,7 @@
   ],
   "modules-right": [
     "clock",
-    "custom/reboot",
-    "custom/shutdown"
+    "custom/wlogout",
   ],
   "modules-center": ["hyprland/workspaces"],
   "hyprland/workspaces": {
@@ -71,15 +70,9 @@
     "spacing": 17
   },
 
-  "custom/reboot": {
-      "format": "",
-      "tooltip": false,
-      "on-click": "systemctl reboot"
-  },
-
-  "custom/shutdown": {
+  "custom/wlogout": {
       "format": "",
       "tooltip": false,
-      "on-click": "systemctl poweroff"
+      "on-click": "wlogout"
   }
 }
