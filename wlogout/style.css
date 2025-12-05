@@ -1,7 +1,7 @@
 @import "../waybar/theme.css";
 
 window {
-    font-family: JetBrainsMono NF;
+    font-family: JetBrainsMono Nerd Font;
     font-size: 16pt;
     color: @text;
     background-color: rgba(34, 27, 47, 0.6);
