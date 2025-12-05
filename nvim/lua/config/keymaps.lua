@@ -14,11 +14,3 @@ map("n", "<leader>rr", "<cmd>Cargo run<cr>", { desc = "Cargo run" })
 map("n", "<leader>rt", "<cmd>Cargo test<cr>", { desc = "Cargo test" })
 
 map("i", "jk", "<Esc>")
-
-map("n", "<leader>jn", function()
-  require("jdtls").test_nearest_method()
-end, { desc = "Java run nearest test" })
-
-map("n", "<leader>jc", function()
-  require("jdtls").test_class()
-end, { desc = "Java run test class" })
