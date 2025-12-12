@@ -1,31 +1,25 @@
 return {
-  "snacks.nvim",
+  "folke/snacks.nvim",
+  priority = 1000,
+  lazy = false,
   opts = {
-    dashboard = {
-      preset = {
-        pick = function(cmd, opts)
-          return LazyVim.pick(cmd, opts)()
-        end,
-        header = [[
-         █████                                          █████████                                     
-        ▒▒███                                          ███▒▒▒▒▒███                                    
-         ▒███         ██████  █████ █████  ██████     ▒███    ▒███  █████████████    ██████  ████████ 
-         ▒███        ███▒▒███▒▒███ ▒▒███  ███▒▒███    ▒███████████ ▒▒███▒▒███▒▒███  ███▒▒███▒▒███▒▒███
-         ▒███       ▒███ ▒███ ▒███  ▒███ ▒███████     ▒███▒▒▒▒▒███  ▒███ ▒███ ▒███ ▒███ ▒███ ▒███ ▒▒▒ 
-         ▒███      █▒███ ▒███ ▒▒███ ███  ▒███▒▒▒      ▒███    ▒███  ▒███ ▒███ ▒███ ▒███ ▒███ ▒███     
-         ███████████▒▒██████   ▒▒█████   ▒▒██████     █████   █████ █████▒███ █████▒▒██████  █████    
-         ▒▒▒▒▒▒▒▒▒▒▒  ▒▒▒▒▒▒     ▒▒▒▒▒     ▒▒▒▒▒▒     ▒▒▒▒▒   ▒▒▒▒▒ ▒▒▒▒▒ ▒▒▒ ▒▒▒▒▒  ▒▒▒▒▒▒  ▒▒▒▒▒     
-]],
-       -- stylua: ignore
-       ---@type snacks.dashboard.Item[]
-       keys = {
-         { icon = " ", key = "f", desc = "Find File", action = ":lua Snacks.dashboard.pick('files')" },
-         { icon = " ", key = "n", desc = "New File", action = ":ene | startinsert" },
-         { icon = " ", key = "r", desc = "Recent Files", action = ":lua Snacks.dashboard.pick('oldfiles')" },
-         { icon = " ", key = "c", desc = "Config", action = ":lua Snacks.dashboard.pick('files', {cwd = vim.fn.stdpath('config')})" },
-         { icon = " ", key = "q", desc = "Quit", action = ":qa" },
-       },
-      },
+    bigfile = { enabled = true },
+    dashboard = { enabled = true },
+    explorer = { enabled = true },
+    indent = { enabled = true },
+    notifier = {
+      enabled = true,
+      timeout = 3000,
+    },
+    words = { enabled = true },
+  },
+  keys = {
+    {
+      "<leader>e",
+      function()
+        require("snacks").explorer()
+      end,
+      desc = "Explorer Snacks (root dir)",
     },
   },
 }
