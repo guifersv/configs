@@ -4,35 +4,42 @@
   /* background-color: @background; */
   all: unset;
   font-family: "JetBrainsMono Nerd Font Propo";
-  font-size: 13px;
+  font-size: 12px;
   font-weight: bold;
 }
 
 .modules-left * {
   margin-left: 16px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border-radius: 10px;
 }
 
 .modules-right * {
+  border-radius: 10px;
+  margin-top: 4px;
+  margin-bottom: 4px;
   margin-right: 16px;
 }
 
 #waybar {
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 120px;
+  border-radius: 10px;
+  background: @base;
 }
 
 #workspaces button {
-	color: @text;
-	text-shadow: 0 0 5px rgba(0,0,0,0.2);
-	padding: 0 20px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: @magenta;
+  padding: 0 10px;
   transition: 0.2s ease-out;
 }
 
 #workspaces button.active,
 #workspaces button.focused {
-	padding: 0 30px;
-	color: @lavender;
-	background: rgba(255,255,255,0.06);
+  padding: 0 25px;
 }
 
 #workspaces button.empty {
@@ -40,14 +47,30 @@
 }
 
 #workspaces button.urgent {
-  color: @sunset;
+  color: @red;
 }
 
-#cpu,
-#memory,
-#clock,
-#pulseaudio,
-
+#cpu {
+  padding: 0 10px;
+  background-color: @black;
+}
+#memory {
+  padding: 0 10px;
+  background-color: @black;
+}
+#pulseaudio {
+  padding: 0 10px;
+  background-color: @black;
+}
+#clock {
+  padding: 0 10px;
+  background-color: @black;
+}
+#custom-wlogout {
+  border: 1px solid @magenta;
+  padding: 0 10px;
+  background-color: @black;
+}
 tooltip {
   padding: 2px;
 }
