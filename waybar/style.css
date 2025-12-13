@@ -28,17 +28,18 @@
 }
 
 #workspaces button {
-  margin-top: 4px;
-  margin-bottom: 4px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   margin-right: 10px;
   border-radius: 10px;
-  background-color: @magenta;
+  background-color: @dim_black;
   padding: 0 10px;
   transition: 0.2s ease-out;
 }
 
 #workspaces button.active,
 #workspaces button.focused {
+  background-color: @magenta;
   padding: 0 25px;
 }
 
