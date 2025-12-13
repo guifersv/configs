@@ -28,8 +28,8 @@
 }
 
 #workspaces button {
-  margin-top: 6px;
-  margin-bottom: 6px;
+  margin-top: 4px;
+  margin-bottom: 4px;
   margin-right: 10px;
   border-radius: 10px;
   background-color: @magenta;

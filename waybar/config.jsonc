@@ -9,8 +9,7 @@
   "modules-left": [
     "pulseaudio",
     "memory",
-    "cpu",
-    "hyprland/window"
+    "cpu"
   ],
   "modules-right": [
     "custom/spotify",
