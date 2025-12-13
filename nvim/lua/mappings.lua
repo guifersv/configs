@@ -100,4 +100,8 @@ map("n", "<leader>mt", "<cmd>Dotnet test<cr>", { desc = "Dotnet test" })
 map("n", "<leader>mb", "<cmd>Dotnet build<cr>", { desc = "Dotnet build" })
 map("n", "<leader>mv", "<cmd>Dotnet project view<cr>", { desc = "Dotnet project view" })
 
+map({ "n", "o", "x" }, "w", "<cmd>lua require('spider').motion('w')<CR>")
+map({ "n", "o", "x" }, "e", "<cmd>lua require('spider').motion('e')<CR>")
+map({ "n", "o", "x" }, "b", "<cmd>lua require('spider').motion('b')<CR>")
+
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
