@@ -2,11 +2,11 @@ max-history=0
 history=0
 font=JetBrainsMono Nerd Font 10
 background-color=#221B2F
-text-color=#E6E0F8
+text-color=#e0def4
 border-size=2
-border-color=#c28eff
+border-color=#c4a7e7
 border-radius=10
-progress-color=over #c28eff
+progress-color=over #c4a7e7
 default-timeout=4000
 format=<b>%a ⏵</b> %s\n%b
 
