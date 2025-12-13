@@ -71,6 +71,10 @@
   padding: 0 10px;
   background-color: @black;
 }
+#custom-spotify {
+  padding: 0 10px;
+  background-color: @black;
+}
 tooltip {
   padding: 2px;
 }

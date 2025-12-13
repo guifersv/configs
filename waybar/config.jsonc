@@ -12,6 +12,7 @@
     "cpu"
   ],
   "modules-right": [
+    "custom/spotify",
     "clock",
     "custom/wlogout"
   ],
@@ -68,5 +69,15 @@
       "format": "",
       "tooltip": false,
       "on-click": "wlogout"
+  },
+  "custom/spotify": {
+      "format": " {}",
+      "escape": true,
+      "return-type": "json",
+      "max-length": 40,
+      "on-click": "playerctl -p spotify play-pause",
+      "on-click-right": "killall spotify",
+      "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null", // Script in resources/custom_modules folder
+      "exec-if": "pgrep spotify"
   }
 }
