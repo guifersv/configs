@@ -1,5 +1,5 @@
 [general]
-import = ["~/.config/alacritty/themes/oasis_twilight.toml"]
+import = ["~/.config/alacritty/themes/rose-pine.toml"]
 
 [env]
 TERM = "xterm-256color"
