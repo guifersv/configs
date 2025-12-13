@@ -74,7 +74,7 @@ map({ "n", "t" }, "<A-v>", function()
   require("nvchad.term").toggle { pos = "vsp", id = "vtoggleTerm" }
 end, { desc = "terminal toggleable vertical term" })
 
-map({ "n", "t" }, "<A-h>", function()
+map({ "n", "t" }, "<A-s>", function()
   require("nvchad.term").toggle { pos = "sp", id = "htoggleTerm" }
 end, { desc = "terminal toggleable horizontal term" })
 
@@ -93,5 +93,11 @@ map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 map("n", "<leader>Q", "<cmd>qa! <CR>", { desc = "Force Exit" })
 map("n", "<leader>q", "<cmd>qa <CR>", { desc = "Exit" })
+
+map("n", "<leader>mr", "<cmd>Dotnet run<cr>", { desc = "Dotnet run" })
+map("n", "<leader>mw", "<cmd>Dotnet watch<cr>", { desc = "Dotnet watch" })
+map("n", "<leader>mt", "<cmd>Dotnet test<cr>", { desc = "Dotnet test" })
+map("n", "<leader>mb", "<cmd>Dotnet build<cr>", { desc = "Dotnet build" })
+map("n", "<leader>mv", "<cmd>Dotnet project view<cr>", { desc = "Dotnet project view" })
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")

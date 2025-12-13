@@ -4,14 +4,28 @@ return {
   lazy = false,
   opts = {
     bigfile = { enabled = true },
-    dashboard = { enabled = true },
-    explorer = { enabled = true },
+    dashboard = {
+      preset = {
+        header = [[
+         █████                                          █████████                                     
+        ▒▒███                                          ███▒▒▒▒▒███                                    
+         ▒███         ██████  █████ █████  ██████     ▒███    ▒███  █████████████    ██████  ████████ 
+         ▒███        ███▒▒███▒▒███ ▒▒███  ███▒▒███    ▒███████████ ▒▒███▒▒███▒▒███  ███▒▒███▒▒███▒▒███
+         ▒███       ▒███ ▒███ ▒███  ▒███ ▒███████     ▒███▒▒▒▒▒███  ▒███ ▒███ ▒███ ▒███ ▒███ ▒███ ▒▒▒ 
+         ▒███      █▒███ ▒███ ▒▒███ ███  ▒███▒▒▒      ▒███    ▒███  ▒███ ▒███ ▒███ ▒███ ▒███ ▒███     
+         ███████████▒▒██████   ▒▒█████   ▒▒██████     █████   █████ █████▒███ █████▒▒██████  █████    
+         ▒▒▒▒▒▒▒▒▒▒▒  ▒▒▒▒▒▒     ▒▒▒▒▒     ▒▒▒▒▒▒     ▒▒▒▒▒   ▒▒▒▒▒ ▒▒▒▒▒ ▒▒▒ ▒▒▒▒▒  ▒▒▒▒▒▒  ▒▒▒▒▒     
+]],
+      },
+    },
+    -- explorer = { enabled = true },
     indent = { enabled = true },
     notifier = {
       enabled = true,
       timeout = 3000,
     },
     words = { enabled = true },
+    lazygit = { enabled = true },
   },
   keys = {
     {
@@ -20,6 +34,13 @@ return {
         require("snacks").explorer()
       end,
       desc = "Explorer Snacks (root dir)",
+    },
+    {
+      "<leader>gg",
+      function()
+        require("snacks").lazygit()
+      end,
+      desc = "Lazygit (root dir)",
     },
   },
 }

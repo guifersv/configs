@@ -1,4 +1,5 @@
 return {
+  { "nvim-tree/nvim-tree.lua", enabled = false },
   {
     "stevearc/conform.nvim",
     event = "BufWritePre", -- uncomment for format on save
@@ -16,13 +17,69 @@ return {
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
 
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        "css",
+        "html",
+        "javascript",
+        "json",
+        "lua",
+        "markdown",
+        "markdown_inline",
+        "toml",
+        "vim",
+        "vimdoc",
+        "xml",
+        "yaml",
+        "c_sharp",
+        "java",
+        "rust",
+      },
+    },
+  },
+
+  {
+    "mason-org/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "netcoredbg",
+      },
+    },
+  },
+
+  {
+    "nvim-mini/mini.move",
+    lazy = false,
+    version = false,
+    config = function()
+      require("mini.move").setup()
+    end,
+  },
+  {
+    "nvim-mini/mini.ai",
+    lazy = false,
+    version = false,
+    config = function()
+      require("mini.ai").setup()
+    end,
+  },
+  {
+    "nvim-mini/mini.surround",
+    lazy = false,
+    version = false,
+    config = function()
+      require("mini.surround").setup {
+        mappings = {
+          add = "gsa", -- Add surrounding in Normal and Visual modes
+          delete = "gsd", -- Delete surrounding
+          replace = "gsr", -- Replace surrounding
+
+          suffix_last = "l", -- Suffix to search with "prev" method
+          suffix_next = "n", -- Suffix to search with "next" method
+        },
+      }
+    end,
+  },
 }
