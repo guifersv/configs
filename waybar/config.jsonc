@@ -9,7 +9,8 @@
   "modules-left": [
     "pulseaudio",
     "memory",
-    "cpu"
+    "cpu",
+    "hyprland/window"
   ],
   "modules-right": [
     "custom/spotify",
@@ -17,6 +18,11 @@
     "custom/wlogout"
   ],
   "modules-center": ["hyprland/workspaces"],
+  "hyprland/window": {
+    "format": "{}",
+    "max-length": 100,
+    "separate-outputs": true
+  },
   "hyprland/workspaces": {
     "on-click": "activate",
     "format": "{icon}",

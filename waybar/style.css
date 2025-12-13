@@ -28,8 +28,8 @@
 }
 
 #workspaces button {
-  margin-top: 4px;
-  margin-bottom: 4px;
+  margin-top: 6px;
+  margin-bottom: 6px;
   margin-right: 10px;
   border-radius: 10px;
   background-color: @magenta;
@@ -74,6 +74,13 @@
 #custom-spotify {
   padding: 0 10px;
   background-color: @black;
+}
+#window {
+  padding-right: 16px;
+  background-color: @black;
+}
+window#waybar.empty #window {
+  background-color: transparent;
 }
 tooltip {
   padding: 2px;
