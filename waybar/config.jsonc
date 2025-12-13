@@ -15,6 +15,7 @@
   "modules-right": [
     "custom/spotify",
     "clock",
+    "power-profiles-daemon",
     "custom/wlogout"
   ],
   "modules-center": ["hyprland/workspaces"],
@@ -85,5 +86,16 @@
       "on-click-right": "killall spotify",
       "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null", // Script in resources/custom_modules folder
       "exec-if": "pgrep spotify"
+  },
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "",
+      "performance": "",
+      "balanced": "",
+      "power-saver": ""
   }
+}
 }

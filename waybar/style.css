@@ -82,8 +82,14 @@
 window#waybar.empty #window {
   background-color: transparent;
 }
+#power-profiles-daemon {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: @black;
+}
 tooltip {
   padding: 2px;
+  background-color: @magenta;
 }
 
 .hidden {
